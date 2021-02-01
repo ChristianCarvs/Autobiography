@@ -1,4 +1,4 @@
-## Welcome to my Pages
+## Welcome
 
 Hi 😁
 
