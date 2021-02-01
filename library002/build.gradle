@@ -1,0 +1,24 @@
+plugins {
+    id 'com.android.library'
+}
+
+version = VERSION_NAME
+group = GROUP
+
+android {
+    compileSdkVersion 29
+    buildToolsVersion "30.0.3"
+
+    defaultConfig {
+        minSdkVersion 9
+    }
+
+    lintOptions {
+        abortOnError false
+    }
+}
+
+dependencies {
+    implementation project(':library003')
+    implementation 'pl.droidsonroids.gif:android-gif-drawable:1.2.21'
+}

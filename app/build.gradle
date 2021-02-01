@@ -1,0 +1,54 @@
+plugins {
+    id 'com.android.application'
+}
+
+android {
+    signingConfigs {
+        releaseME {
+            storeFile file('C:\\Users\\Franc\\AndroidStudioProjects\\releaseME.jks')
+            storePassword '123456'
+            keyAlias 'key0'
+            keyPassword '123456'
+        }
+    }
+
+    compileSdkVersion 29
+    buildToolsVersion "30.0.3"
+
+    defaultConfig {
+        applicationId "bsint.project.autobiography"
+        minSdkVersion 17
+        targetSdkVersion 29
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled true
+            shrinkResources true
+            multiDexEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+
+            signingConfig signingConfigs.releaseME
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies
+        {
+            implementation project(':library001')
+            implementation project(':library002')
+
+            implementation 'androidx.appcompat:appcompat:1.2.0'
+            implementation 'com.google.android.material:material:1.2.1'
+
+            implementation 'com.github.hsmnzaydn:imagezoom:1.3.0'
+            implementation 'pl.droidsonroids.gif:android-gif-drawable:1.2.21'
+        }

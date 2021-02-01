@@ -1,0 +1,441 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.project.library001.FoldingCell
+        android:id="@+id/folding_cell2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:clipChildren="false"
+        android:clipToPadding="false">
+
+        <FrameLayout
+            android:id="@+id/cell_content_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="30dp"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <!-- content header line -->
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#000000"
+                    android:paddingLeft="12dp"
+                    android:paddingTop="7dp"
+                    android:paddingRight="12dp"
+                    android:paddingBottom="7dp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/menu" />
+
+                </RelativeLayout>
+
+                <!-- content header image -->
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/head_image"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/image" />
+
+                    <TextView
+                        android:id="@+id/head_image_left_text"
+                        style="@style/ContentImageBadgeText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignStart="@id/head_image"
+                        android:layout_alignBottom="@id/head_image"
+                        android:paddingStart="20dp"
+                        android:paddingBottom="10dp"
+                        android:text="@string/Height2" />
+
+                    <TextView
+                        style="@style/ContentImageBadgeTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_above="@id/head_image_left_text"
+                        android:layout_alignStart="@id/head_image_left_text"
+                        android:paddingStart="20dp"
+                        android:text="@string/HeightLabel" />
+
+                    <TextView
+                        android:id="@+id/head_image_right_text"
+                        style="@style/ContentImageBadgeText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignEnd="@id/head_image"
+                        android:layout_alignBottom="@id/head_image"
+                        android:paddingEnd="20dp"
+                        android:paddingBottom="10dp"
+                        android:text="@string/Weight2" />
+
+                    <TextView
+                        style="@style/ContentImageBadgeTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_above="@id/head_image_right_text"
+                        android:layout_alignStart="@id/head_image_right_text"
+                        android:text="@string/WeightLabel" />
+
+                </RelativeLayout>
+
+                <!-- content body layout -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/bgContent"
+                    android:orientation="vertical"
+                    android:paddingLeft="20dp"
+                    android:paddingTop="9dp"
+                    android:paddingRight="20dp"
+                    android:paddingBottom="6dp">
+
+                    <!-- avatar and name part -->
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:id="@+id/content_avatar_title"
+                            style="@style/ContentMainBadgeTitle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentStart="true"
+                            android:layout_marginBottom="5dp"
+                            android:text="@string/FullName" />
+
+                        <ImageView
+                            android:id="@+id/content_avatar"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/content_avatar_title"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/ceniza" />
+
+                        <TextView
+                            android:id="@+id/content_name_view"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignTop="@id/content_avatar"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginBottom="2dp"
+                            android:layout_toEndOf="@id/content_avatar"
+                            android:text="@string/Name2"
+                            android:textColor="@color/mainTextColor"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+
+                    </RelativeLayout>
+
+                    <!-- divider line -->
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="9dp"
+                        android:layout_marginBottom="6dp"
+                        android:src="@color/contentDividerLine" />
+
+                    <!-- addresses part -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:baselineAligned="false"
+                        android:orientation="horizontal">
+
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1">
+
+                            <TextView
+                                android:id="@+id/content_AddressLabel"
+                                style="@style/ContentMainBadgeTitle"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentStart="true"
+                                android:text="@string/AddressLabel" />
+
+                            <TextView
+                                android:id="@+id/content_from_address_1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/content_AddressLabel"
+                                android:layout_alignStart="@id/content_AddressLabel"
+                                android:text="@string/Add2_1"
+                                android:textColor="@color/mainTextColor"
+                                android:textSize="18sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/content_from_address_2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/content_from_address_1"
+                                android:layout_alignStart="@id/content_from_address_1"
+                                android:text="@string/Add2_2"
+                                android:textColor="@color/mainTextColor"
+                                android:textSize="14sp" />
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="5dp"
+                            android:layout_weight="1">
+
+                            <TextView
+                                android:id="@+id/content_BirthdayLabel"
+                                style="@style/ContentMainBadgeTitle"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentStart="true"
+                                android:text="@string/BirthdayLabel" />
+
+                            <TextView
+                                android:id="@+id/content_to_address_1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/content_BirthdayLabel"
+                                android:layout_alignStart="@id/content_BirthdayLabel"
+                                android:text="@string/birth2"
+                                android:textColor="@color/mainTextColor"
+                                android:textSize="18sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/content_to_address_2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/content_to_address_1"
+                                android:layout_alignStart="@id/content_to_address_1"
+                                android:text="@string/birth2_1"
+                                android:textColor="@color/mainTextColor"
+                                android:textSize="14sp" />
+
+                        </RelativeLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/textview1"
+                                style="@style/ContentMainBadgeTitle"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/NicknameLabel" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/Nickname2"
+                                android:textColor="@color/mainTextColor"
+                                android:textSize="18sp"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <!-- divider line -->
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="7dp"
+                        android:layout_marginBottom="6dp"
+                        android:src="@color/contentDividerLine" />
+
+                    <!-- dates part -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:baselineAligned="false"
+                        android:orientation="horizontal">
+
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1">
+
+                            <TextView
+                                android:id="@+id/content_ShortLabel"
+                                style="@style/ContentMainBadgeTitle"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentStart="true"
+                                android:text="@string/ShortLabel" />
+
+                            <TextView
+                                android:id="@+id/content_delivery_date"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/content_ShortLabel"
+                                android:layout_alignStart="@id/content_ShortLabel"
+                                android:justificationMode="inter_word"
+                                android:text="@string/shortstory2"
+                                android:textColor="@color/mainTextColor"
+                                android:textSize="14sp" />
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/cell_title_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:padding="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/bgContent"
+                android:baselineAligned="false"
+                android:orientation="horizontal">
+
+                <!-- LEFT TITLE PART -->
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="155dp"
+                    android:layout_weight="3"
+                    android:background="#121212"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="20dp"
+                    android:paddingRight="10dp"
+                    android:paddingBottom="20dp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/pin" />
+
+                </RelativeLayout>
+                <!-- RIGHT TITLE PART -->
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/colorPrimary"
+                    android:paddingStart="15dp"
+                    android:paddingTop="20dp"
+                    android:paddingEnd="20dp"
+                    android:paddingBottom="20dp">
+
+                    <ImageView
+                        android:id="@+id/title_from_to_dots"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginEnd="10dp"
+                        android:src="@drawable/from_to_purple" />
+
+                    <TextView
+                        android:id="@+id/label1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignTop="@+id/title_from_to_dots"
+                        android:layout_marginTop="-5dp"
+                        android:layout_toEndOf="@+id/title_from_to_dots"
+                        android:ellipsize="marquee"
+                        android:fadingEdge="horizontal"
+                        android:singleLine="true"
+                        android:text="@string/Name2"
+                        style="@style/TitleBadgeTitle"
+                        android:textSize="16sp" />
+
+                    <pl.droidsonroids.gif.GifImageView
+                        android:id="@+id/image1"
+                        android:layout_width="match_parent"
+                        android:layout_height="15dp"
+                        android:layout_marginTop="5dp"
+                        android:src="@drawable/line"
+                        android:layout_below="@id/label1"
+                        android:layout_marginBottom="5dp"
+                        android:layout_toEndOf="@+id/title_from_to_dots" />
+
+                    <TextView
+                        android:id="@+id/title_to_address"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/image1"
+                        android:layout_toEndOf="@id/title_from_to_dots"
+                        android:ellipsize="marquee"
+                        android:fadingEdge="horizontal"
+                        android:singleLine="true"
+                        android:text="@string/Add2"
+                        style="@style/TitleBadgeTitle"
+                        android:textSize="16sp" />
+
+
+                    <TextView
+                        android:id="@+id/title_requests_count"
+                        style="@style/TitleBadgeText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentBottom="true"
+                        android:text="@string/Height2" />
+
+                    <TextView
+                        style="@style/TitleBadgeTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_above="@id/title_requests_count"
+                        android:layout_alignStart="@id/title_requests_count"
+                        android:text="@string/HeightLabel" />
+
+                    <TextView
+                        android:id="@+id/title_weight"
+                        style="@style/TitleBadgeText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentBottom="true"
+                        android:text="@string/Weight2" />
+
+                    <TextView
+                        style="@style/TitleBadgeTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_above="@id/title_weight"
+                        android:layout_alignStart="@id/title_weight"
+                        android:text="@string/WeightLabel" />
+
+                    <TextView
+                        android:id="@+id/title_pledge"
+                        style="@style/TitleBadgeText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </FrameLayout>
+    </com.project.library001.FoldingCell>
+</LinearLayout>

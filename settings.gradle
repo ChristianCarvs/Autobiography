@@ -1,0 +1,5 @@
+include ':library003'
+include ':library002'
+include ':library001'
+include ':app'
+rootProject.name = "Autobiography"

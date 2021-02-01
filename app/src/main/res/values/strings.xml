@@ -1,0 +1,72 @@
+<resources>
+    <string name="app_name">Autobiography</string>
+    <string name="HeightLabel">HEIGHT</string>
+    <string name="WeightLabel">WEIGHT</string>
+    <string name="FullName">FULL NAME</string>
+    <string name="AddressLabel">ADDRESS</string>
+    <string name="BirthdayLabel">BIRTHDATE</string>
+    <string name="ShortLabel">SHORT STORY</string>
+    <string name="NicknameLabel">NICKNAME</string>
+
+    // Name1
+    <string name="Name1">Christian Franc M. Carvajal</string>
+    <string name="Nickname1">Koykoy</string>
+    <string name="Add1">Brgy. Malusay, Guihulngan City Negros Oriental</string>
+    <string name="Add1_1">Negros Oriental</string>
+    <string name="Add1_2">Brgy. Malusay, Guihulngan City</string>
+    <string name="Height1">5\'9 ft</string>
+    <string name="Weight1">59 kg</string>
+    <string name="birth1">October</string>
+    <string name="birth1_1">7, 2000</string>
+    <string name="shortstory">My name is Christian Franc M. Carvajal. My current role in life is the eldest brother with two brothers. My ultimate goal is to build something beneficial to society.  It may not be just one thing, but a combination of things. I have not precisely pinpointed what I would like to make. Still, I guess that gives me the freedom to explore more technologies before settling on a problem and crafting a solution for it. As a junior developer with still a lot to learn, that is my end goal, and it is what motivates me to improve myself as a developer.</string>
+
+    // Name2
+    <string name="Name2">Carl Vincent Ceniza</string>
+    <string name="Nickname2">Monet</string>
+    <string name="Add2">Rizal st. Poblacion 2, Siaton, Negros Oriental</string>
+    <string name="Add2_1">Negros Oriental</string>
+    <string name="Add2_2">Rizal st. Poblacion 2, Siaton</string>
+    <string name="Height2">5\'4 ft</string>
+    <string name="Weight2">59 kg</string>
+    <string name="birth2">July</string>
+    <string name="birth2_1">26, 1999</string>
+    <string name="shortstory2">My name is Carl Vincent T. Ceniza. Im the cutiest son in the family. My goal is to prove my skills to my parents so that they\'re proud to me and I want to achieve my goal to become a successful in life.</string>
+
+    // Name3
+    <string name="Name3">Jerson R. Cañoneo</string>
+    <string name="Nickname3">Soy</string>
+    <string name="Add3">Jugno, Amlan, Negros Oriental</string>
+    <string name="Add3_1">Negros Oriental</string>
+    <string name="Add3_2">Jugno, Amlan</string>
+    <string name="Height3">5\'5 ft</string>
+    <string name="Weight3">62 kg</string>
+    <string name="birth3">October</string>
+    <string name="birth3_1">16, 2000</string>
+    <string name="shortstory3">My name is Jerson R. Cañoneo, my current role in life is the eldest brother and I have only one brother, we are only have four members on our family. My goal is to develop my skills and talent about arts, I have been making arts since I was a kid. It\'s not just about arts for me, it\'s now part of my life I\'ve been earning some money through making arts. And my ultimate goal is to become a successful person.</string>
+
+    // Name4
+    <string name="Name4">Carmela Jane L. Crisostomo</string>
+    <string name="Nickname4">CJ</string>
+    <string name="Add4">Canalum, Brgy. Nangka, Bayawan City, Negros Oriental</string>
+    <string name="Add4_1">Negros Oriental</string>
+    <string name="Add4_2">Canalum, Brgy. Nangka, Bayawan City</string>
+    <string name="Height4">5\'4 ft</string>
+    <string name="Weight4">48 kg</string>
+    <string name="birth4">December</string>
+    <string name="birth4_1">20, 2000</string>
+    <string name="shortstory4">I\'m Carmela Jane L. Crisostomo, the eldest daughter, among the 3 children, of Mr. &amp; Mrs. Reynaldo E. Crisostomo Jr. Born and raised in the "City of Character", Bayawan City, Negros Oriental. The only thing I try to aspire in life is happiness and contentment.</string>
+
+    // Name5
+    <string name="Name5">Joemar B. Cual</string>
+    <string name="Nickname5">Mar</string>
+    <string name="Add5">Upper Cantil-e, Dumaguete City, Negros Oriental</string>
+    <string name="Add5_1">Negros Oriental</string>
+    <string name="Add5_2">Upper Cantil-e, Dumaguete City</string>
+    <string name="Height5">5\'0 ft</string>
+    <string name="Weight5">45 kg</string>
+    <string name="birth5">April</string>
+    <string name="birth5_1"> 21, 2001</string>
+    <string name="shortstory5">My name is Joemar B. Cual. I\'m the youngest in the family. My Goal is to have my name in the music scene here in the Philippines, to become successful in life, and to give something back to the society.</string>
+
+
+</resources>
